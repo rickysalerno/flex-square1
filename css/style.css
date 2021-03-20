@@ -1,0 +1,79 @@
+body {
+    font-family: Helvetica;
+}
+
+nav {
+    background-color: pink;
+    margin: -10px auto;
+    padding: 1.2em;
+    font-size: 20px;
+}
+
+ul, li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+p {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3vw;
+    margin: 10vh;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4em;
+    line-height: 100px;
+}
+
+
+#red {
+    background-color: red;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#green {
+    background-color: green;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#blue {
+    background-color: blue;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        color: violet;
+        display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    }
+
+    #red, #green, #blue {
+        margin-bottom: 25px;
+    }
+}
